@@ -250,6 +250,7 @@ public class AutoScrollViewPager extends ViewPager {
                     }
                     break;
                 case MotionEvent.ACTION_UP:
+                case MotionEvent.ACTION_CANCEL:
                 case MotionEvent.ACTION_OUTSIDE:
                     if (isStopedWhenTouch) {
                         startAutoScroll();
